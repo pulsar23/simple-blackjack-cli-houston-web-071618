@@ -59,7 +59,7 @@ end
 def runner
   welcome
   total_value = initial_round
-  until total_value >= 21 do
+  until total_value > 21 do
   new_total = hit?(total_value)
   
 end
