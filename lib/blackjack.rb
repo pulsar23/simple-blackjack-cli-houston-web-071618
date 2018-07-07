@@ -20,8 +20,8 @@ def get_user_input
   return user_input
 end
 
-def end_game
-  
+def end_game(card_total)
+  puts "Sorry"
 end
 
 def initial_round
