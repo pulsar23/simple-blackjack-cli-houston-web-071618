@@ -55,7 +55,8 @@ end
 
 def runner
   welcome
-  initial_round
+  total_value = initial_round
+  prompt_user
   
 end
     
