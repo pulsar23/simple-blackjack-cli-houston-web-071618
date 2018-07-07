@@ -38,10 +38,13 @@ def hit?(current_total)
   if x == 'h'
     new_card = deal_card
     new_total = current_total + new_card
+    return new_total
   elsif x == 's'
+    return current_total
   else
     invalid_command
     prompt_user
+    return current_total
   end
 end
 
@@ -56,7 +59,7 @@ end
 def runner
   welcome
   total_value = initial_round
-  hit?(total_value)
+  new_total = hit?(total_value)
   
 end
     
