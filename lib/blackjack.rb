@@ -56,7 +56,7 @@ end
 def runner
   welcome
   total_value = initial_round
-  prompt_user
+  hit?(total_value)
   
 end
     
